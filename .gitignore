@@ -27,3 +27,6 @@ DerivedData/
 
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+### Mac folder ###
+.DS_Store
