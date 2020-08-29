@@ -1,9 +1,0 @@
-platform :ios, '12.0'
-
-target 'Flash Chat' do
-  use_frameworks!
-  
-  pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
-
-end
