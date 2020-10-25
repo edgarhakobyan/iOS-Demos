@@ -24,21 +24,26 @@ struct WeatherManager {
     }
     
     private func performRequest(with urlString: String) {
-        if let url = URL(string: urlString) {
-            let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { (data, response, error) in
-                if error != nil {
-                    self.delegate?.didFailWithError(error: error!)
-                    return
-                }
-                
-                if let safeData = data {
-                    if let parsedData = self.parseJSON(safeData) {
-                        self.delegate?.didUpdateWeather(self, weather: parsedData)
+        print(urlString)
+        if let finalUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+            if let url = URL(string: finalUrlString) {
+                print(url)
+                let session = URLSession(configuration: .default)
+                let task = session.dataTask(with: url) { (data, response, error) in
+                    print("in task")
+                    if error != nil {
+                        self.delegate?.didFailWithError(error: error!)
+                        return
+                    }
+                    
+                    if let safeData = data {
+                        if let parsedData = self.parseJSON(safeData) {
+                            self.delegate?.didUpdateWeather(self, weather: parsedData)
+                        }
                     }
                 }
+                task.resume()
             }
-            task.resume()
         }
     }
     
