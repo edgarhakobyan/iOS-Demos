@@ -2,10 +2,10 @@
 This repository contains sample iOS applications
 
 
-###### ARDicee
+## ARDicee
 SceneKit and ARKit
 
-###### ARNewsPaper
+## ARNewsPaper
 Live video on AR
 
 ###### ARPokemon
