@@ -2,64 +2,64 @@
 This repository contains sample iOS applications
 
 
-# ARDicee
+###### ARDicee
 SceneKit and ARKit
 
-# ARNewsPaper
+###### ARNewsPaper
 Live video on AR
 
-# ARPokemon
+###### ARPokemon
 Tracking 3D objects
 
-# ARRuler
+###### ARRuler
 SceneKit and ARKit
 
-# Bitcoin app
+###### Bitcoin app
 MVC, URLSession, JSONDecoder, PickerView
 
-# Calculator
+###### Calculator
 MVC
 
-# Clima
+###### Clima
 MVC, URLSession, JSONDecoder, delegate
 
-# Dice Game
+###### Dice Game
 
-# DiceeSwiftUI
+###### DiceeSwiftUI
 SwiftUI
 
-# EggTimer
+###### EggTimer
 Progress bar
 
-# EmojiReader
+###### EmojiReader
 MVC, TableView
 
-# I am reach
+###### I am reach
 SwiftUI
 
-# Lifecycle Demo
+###### Lifecycle Demo
 App lifecycle
 
-# MyCard
+###### MyCard
 SwiftUI
 
-# NewsSwiftUI
+###### NewsSwiftUI
 SwiftUI, MVC, URLSession, JSONDecoder
 
-# PhotoTaps
+###### PhotoTaps
 CollectionViewController, UIActivityViewController (Share action)
 
-# Quizzer
+###### Quizzer
 MVC
 
-# Quotes
+###### Quotes
 In-App purchase
 
-# SeeFood
+###### SeeFood
 CoreML, Vision, UIImagePicker, Inceptionv3 model
 
-# WhatFlower
+###### WhatFlower
 CoreML, Vision, SwiftyJSON, Alamofire, SDWebImage
 
-# Xylophone
+###### Xylophone
 AVAudioPlayer, DispatchQueue
