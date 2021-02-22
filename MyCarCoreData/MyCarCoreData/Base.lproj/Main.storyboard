@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCarCoreData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aut-fH-GQM">
+                                <rect key="frame" x="10" y="64" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lamborgini" translatesAutoresizingMaskIntoConstraints="NO" id="3LA-vD-KmC">
+                                <rect key="frame" x="0.0" y="155" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4YQ-Pr-VPv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last time started:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vK8-a4-4Y4">
+                                <rect key="frame" x="10" y="375" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of trips:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCX-Rx-beA">
+                                <rect key="frame" x="10" y="406" width="404" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raitng X / 10.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQK-Lx-lxF">
+                                <rect key="frame" x="295" y="375" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myChoice" translatesAutoresizingMaskIntoConstraints="NO" id="Tkz-n8-s5R">
+                                <rect key="frame" x="0.0" y="498" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="MUh-3e-wub"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6A-fi-sXz">
+                                <rect key="frame" x="264" y="826" width="130" height="36"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="HeL-g9-nhi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Rate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ratePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXO-y9-ajc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFr-a3-LjI">
+                                <rect key="frame" x="10" y="105" width="394" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FwK-dM-ief">
+                                <rect key="frame" x="0.0" y="447" width="414" height="32"/>
+                                <segments>
+                                    <segment title="Lamborghini"/>
+                                    <segment title="Ferrari"/>
+                                    <segment title="Mercedes"/>
+                                    <segment title="Nissan"/>
+                                    <segment title="BMW"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="nvP-OZ-HFu"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcN-8S-5VM">
+                                <rect key="frame" x="20" y="826" width="130" height="36"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="gtR-oC-Lh3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start engine">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startEnginePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3h-iF-6PW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VFr-a3-LjI" firstAttribute="top" secondItem="aut-fH-GQM" secondAttribute="bottom" constant="20" id="0su-SJ-3Dp"/>
+                            <constraint firstItem="Tkz-n8-s5R" firstAttribute="top" secondItem="FwK-dM-ief" secondAttribute="bottom" constant="20" id="4MG-uo-vQU"/>
+                            <constraint firstItem="FwK-dM-ief" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="68W-tV-3xy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FwK-dM-ief" secondAttribute="trailing" id="888-Qf-I9v"/>
+                            <constraint firstItem="Tkz-n8-s5R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9dt-7a-yOf"/>
+                            <constraint firstItem="dcN-8S-5VM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ama-KZ-jlD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hQK-Lx-lxF" secondAttribute="trailing" constant="10" id="Csu-e5-i8L"/>
+                            <constraint firstItem="3LA-vD-KmC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D2j-Dx-kHy"/>
+                            <constraint firstItem="HCX-Rx-beA" firstAttribute="top" secondItem="vK8-a4-4Y4" secondAttribute="bottom" constant="10" id="DZo-Bv-SPO"/>
+                            <constraint firstItem="dcN-8S-5VM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Dyy-iH-Ubq"/>
+                            <constraint firstItem="aut-fH-GQM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EY6-c4-OPi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HCX-Rx-beA" secondAttribute="trailing" id="FDI-li-Uty"/>
+                            <constraint firstItem="3LA-vD-KmC" firstAttribute="top" secondItem="VFr-a3-LjI" secondAttribute="bottom" constant="26" id="Gcy-c3-sa0"/>
+                            <constraint firstItem="E6A-fi-sXz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="dcN-8S-5VM" secondAttribute="trailing" constant="114" id="JEv-fS-jwH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VFr-a3-LjI" secondAttribute="trailing" constant="10" id="LsG-13-2Yr"/>
+                            <constraint firstItem="vK8-a4-4Y4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="N7j-co-zPg"/>
+                            <constraint firstItem="VFr-a3-LjI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="UjM-37-Muc"/>
+                            <constraint firstItem="hQK-Lx-lxF" firstAttribute="top" secondItem="3LA-vD-KmC" secondAttribute="bottom" constant="20" id="Wm1-Tz-jgd"/>
+                            <constraint firstItem="FwK-dM-ief" firstAttribute="top" secondItem="HCX-Rx-beA" secondAttribute="bottom" constant="20" id="gJ9-9n-XrV"/>
+                            <constraint firstItem="3LA-vD-KmC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gfz-bw-oPT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6A-fi-sXz" secondAttribute="trailing" constant="20" id="jeQ-cp-H1q"/>
+                            <constraint firstItem="HCX-Rx-beA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="l8g-KW-0gn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aut-fH-GQM" secondAttribute="trailing" constant="10" id="p0J-ed-Mkf"/>
+                            <constraint firstItem="Tkz-n8-s5R" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pHC-u5-hc1"/>
+                            <constraint firstItem="hQK-Lx-lxF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vK8-a4-4Y4" secondAttribute="trailing" constant="80" id="pI2-co-zuf"/>
+                            <constraint firstItem="vK8-a4-4Y4" firstAttribute="top" secondItem="3LA-vD-KmC" secondAttribute="bottom" constant="20" id="tcX-sI-VZU"/>
+                            <constraint firstItem="E6A-fi-sXz" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="v8l-iV-qYq"/>
+                            <constraint firstItem="aut-fH-GQM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zK8-ql-Iwx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carImageView" destination="3LA-vD-KmC" id="9Q7-Pq-FD2"/>
+                        <outlet property="carSegmentedControl" destination="FwK-dM-ief" id="Lmf-Mn-rEt"/>
+                        <outlet property="markLabel" destination="aut-fH-GQM" id="eGc-yx-ibz"/>
+                        <outlet property="modelLabel" destination="VFr-a3-LjI" id="xHb-ua-hFf"/>
+                        <outlet property="myChoiceImageView" destination="Tkz-n8-s5R" id="ZZB-A8-5p1"/>
+                        <outlet property="numberOfTripsLabel" destination="HCX-Rx-beA" id="7PI-Mv-Ye7"/>
+                        <outlet property="ratingLabel" destination="hQK-Lx-lxF" id="Dfe-dM-Rx6"/>
+                        <outlet property="timeStartedLabel" destination="vK8-a4-4Y4" id="nyU-dY-rqE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lamborgini" width="210" height="101"/>
+        <image name="myChoice" width="150" height="150"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
