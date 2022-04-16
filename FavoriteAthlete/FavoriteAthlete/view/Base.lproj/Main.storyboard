@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bfr-wm-Wi5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Athlete Form View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AthleteFormViewController" customModule="FavoriteAthlete" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TSn-lm-n8b">
+                                <rect key="frame" x="30" y="188" width="354" height="136"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gee-pU-DtN">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PSS-Ye-HKl">
+                                        <rect key="frame" x="0.0" y="34" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rte-ur-t0Q">
+                                        <rect key="frame" x="0.0" y="68" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZH-re-91a">
+                                        <rect key="frame" x="0.0" y="102" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyV-zw-Jd1">
+                                <rect key="frame" x="30" y="374" width="354" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsc-yR-g9D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vyV-zw-Jd1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1hT-a7-5Fk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TSn-lm-n8b" secondAttribute="trailing" constant="30" id="IYz-3M-olq"/>
+                            <constraint firstItem="vyV-zw-Jd1" firstAttribute="top" secondItem="TSn-lm-n8b" secondAttribute="bottom" constant="50" id="dFm-eQ-hNa"/>
+                            <constraint firstItem="TSn-lm-n8b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ftt-Fw-HNQ"/>
+                            <constraint firstItem="TSn-lm-n8b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gM8-US-yQZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vyV-zw-Jd1" secondAttribute="trailing" constant="30" id="xeS-xE-b99"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QxW-46-sOz"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="PSS-Ye-HKl" id="fjW-NQ-tWW"/>
+                        <outlet property="leagueTextField" destination="rte-ur-t0Q" id="VcP-uU-ICS"/>
+                        <outlet property="nameTextField" destination="Gee-pU-DtN" id="eSN-k1-Mce"/>
+                        <outlet property="teamTextField" destination="oZH-re-91a" id="5TJ-XQ-tK7"/>
+                        <segue destination="RdB-ZS-JJG" kind="unwind" identifier="unwindIdentifier" unwindAction="unwindToAthleteTableViewWithSender:" id="ITH-mY-1t8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="RdB-ZS-JJG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1973.913043478261" y="42.857142857142854"/>
+        </scene>
+        <!--Athlete Table View Controller-->
+        <scene sceneID="oUm-4a-WLX">
+            <objects>
+                <tableViewController id="K5z-6u-XIW" customClass="AthleteTableViewController" customModule="FavoriteAthlete" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vac-HW-z9C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AthleteCell" id="2y7-8m-uBd">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2y7-8m-uBd" id="xB9-3z-wyl">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="EditAthlete" destinationCreationSelector="editSegue:sender:" id="Agb-9z-s4R"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="K5z-6u-XIW" id="eb7-tz-7ot"/>
+                            <outlet property="delegate" destination="K5z-6u-XIW" id="AhD-5c-9dS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="V8e-wq-KyU">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="AFa-vy-EuZ">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="AddAthlete" id="Qnm-w3-J7R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DxP-TI-r33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1018.840579710145" y="42.857142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tmr-9t-kOA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bfr-wm-Wi5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vyj-vY-cnW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K5z-6u-XIW" kind="relationship" relationship="rootViewController" id="cdX-ge-W4d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWA-Hl-UDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108.69565217391305" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Agb-9z-s4R"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
