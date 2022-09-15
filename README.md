@@ -1,4 +1,4 @@
-# iOS-Samples
+# iOS-Demos
 This repository contains sample iOS applications
 
 
