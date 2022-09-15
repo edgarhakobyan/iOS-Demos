@@ -1,5 +1,5 @@
 # iOS-Demos
-This repository contains sample iOS applications
+This repository contains iOS demo applications
 
 
 ###### ARDicee
